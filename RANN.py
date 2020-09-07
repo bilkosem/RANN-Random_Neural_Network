@@ -56,9 +56,9 @@ class RANN:
     def init_weights(self,weight_scaler):
         
         for i in range(len(self.wplus)):
-            self.wplus[i] = weight_scaler*np.random.rand(self.wplus[i].shape[0],self.wplus[i].shape[1])
+            self.wplus[i] = weight_scaler*np.random.uniform(size=(self.wplus[i].shape[0],self.wplus[i].shape[1]))
         for i in range(len(self.wminus)):
-            self.wminus[i] = weight_scaler*np.random.rand(self.wminus[i].shape[0],self.wminus[i].shape[1])
+            self.wminus[i] = weight_scaler*np.random.uniform(size=(self.wminus[i].shape[0],self.wminus[i].shape[1]))
         return 1
     
     def calculate_rate(self):
