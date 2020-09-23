@@ -1,17 +1,21 @@
 # Random Neural Network (RANN) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 
-**Queueing Recurrent Neural Network (Q-RNN)** is a new kind of Artificial Neural Network that has been designed to use in time-series forecasting applications. According to experiments that have been run, QRNN has a potential to outperform the LSTM, Simple RNN and GRU, in the cases where the dataset has highly non-linear characteristics.
+**Random Neural Network** is a different ANN structure that implements G-Queues to Artifiacial Neural Network. Unlike the conventional Artificial Neuron structure (McCulloch-Pitts neuron), Random Neurons uses probabilistic calculations and do not need any activation functions. It has been used successfully in various applications areas such as classification, **regression**, **optimization**, **image processing**, **compression** and **associative memories**.
 
 # Table of contents
 
-- [What is RANN?](#RANN)
+- [Quick Overview of the Network Model?](#RANN)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
 
-## What is RANN? 🤔
+## Quick Overview of the Network Model? 🤔
+
+It has been proposed by E. Gelenbe in 1989. A Random Neural Network is a compose of **Random Neurons** and **Spikes** that circulates through the network. According to this model, each neuron has a positive potential which enables itself to emit two kind of signals: *positive* and *negative*. These signals with unit amplitude, circulate in the networks and affects the potential of the target neurons by increasing or decreasing. Unless the potential value of the neuron which is defined as integer is zero, the negative signals creates inhibition effect and decrease the potential by 1 since it is amplitude is 1. Otherwise potential does not get affected by the inhibiting signals and have a potential of zero until a positive signal is received. Network can also establish signal transmission with the outside world. 
+
 ![Random Neuron](images/random_neuron.png)
 
+In 1990, Gelenbe declared the stability condition of the Random Neural Network [7] and in 1993 a recurrent structure regarding Random Neural Network is presented with detailed explanations of feedforward and backpropagation phases [8]. 
 ## Installation 🛠
 
 Installing via [pip](https://pip.pypa.io/en/stable/) package manager:
