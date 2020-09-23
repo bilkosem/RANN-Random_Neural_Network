@@ -4,12 +4,12 @@
 
 # Table of contents
 
-- [Quick Overview of the Network Model?](#RANN)
+- [Overview](#rann)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
 
-## Quick Overview of the Network Model? 🤔
+## Quick Overview of the Network Model 🕮
 
 It has been proposed by E. Gelenbe in 1989. A Random Neural Network is a compose of **Random Neurons** and **Spikes** that circulates through the network. According to this model, each neuron has a positive potential which enables itself to emit two kind of signals: *positive* and *negative*. These signals with unit amplitude, circulate in the networks and affects the potential of the target neurons by increasing or decreasing. Unless the potential value of the neuron which is defined as integer is zero, the negative signals creates inhibition effect and decrease the potential by 1 since it is amplitude is 1. Otherwise potential does not get affected by the inhibiting signals and have a potential of zero until a positive signal is received. Network can also establish signal transmission with the outside world. 
 
