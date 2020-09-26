@@ -1,3 +1,12 @@
+
+###############################################################################
+# Author: Bilgehan Kösem
+# E-mail: bilkos92@gmail.com
+# Date created: 07.02.2020
+# Date last modified: 07.23.2020
+# Python Version: 3.7
+###############################################################################
+
 import numpy as np
 import copy
 
