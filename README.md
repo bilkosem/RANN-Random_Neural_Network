@@ -4,19 +4,20 @@
 
 # Table of contents
 
-- [Overview](#rann)
+- [Overview](#overview)
 - [Installation](#installation)
 - [Usage](#usage)
+- [References](#references)
 - [License](#license)
 
-## Quick Overview of the Network Model 🕮
+## Quick Overview of the Network Model 🕮 <a name="overview"></a>
 
 It has been proposed by E. Gelenbe in 1989. A Random Neural Network is a compose of **Random Neurons** and **Spikes** that circulates through the network. According to this model, each neuron has a positive potential which enables itself to emit two kind of signals: *positive* and *negative*. These signals with unit amplitude, circulate in the networks and affects the potential of the target neurons by increasing or decreasing. Unless the potential value of the neuron which is defined as integer is zero, the negative signals creates inhibition effect and decrease the potential by 1 since it is amplitude is 1. Otherwise potential does not get affected by the inhibiting signals and have a potential of zero until a positive signal is received. Network can also establish signal transmission with the outside world. 
 
 ![Random Neuron](images/random_neuron.png)
 
 In 1990, Gelenbe declared the stability condition of the Random Neural Network [7] and in 1993 a recurrent structure regarding Random Neural Network is presented with detailed explanations of feedforward and backpropagation phases [8]. 
-## Installation 🛠
+## Installation 🛠 <a name="installation"></a>
 
 Installing via [pip](https://pip.pypa.io/en/stable/) package manager:
 
@@ -32,7 +33,7 @@ cd rann
 python setup.py install
 ```
 
-## Usage 👩‍💻
+## Usage 👩‍💻 <a name="usage"></a>
 
 ```python
 from rann import RANN
@@ -45,8 +46,8 @@ for s in range(samples):
     # Calculate Loss
     rann.backpropagation()
 ```
-Check the [examples](https://github.com/bilkosem/rann/tree/master/examples) folder to see detailed use 🔎.
-## References 📚
+Check the [examples](https://github.com/bilkosem/rann/tree/master/examples) folder to see detailed use for 2 different dataset 🔎.
+## References 📚 <a name="references"></a>
 
 [1] [Gelenbe, Erol. (1989). Random Neural Networks with Negative and Positive Signals and Product Form Solution. Neural Computation - NECO. 1. 502-510. 10.1162/neco.1989.1.4.502.](https://www.researchgate.net/publication/239294946_Random_Neural_Networks_with_Negative_and_Positive_Signals_and_Product_Form_Solution) 
 
@@ -57,6 +58,6 @@ Check the [examples](https://github.com/bilkosem/rann/tree/master/examples) fold
 [4] [Hossam Abdelbaki (2020). rnnsimv2.zip (https://www.mathworks.com/matlabcentral/fileexchange/91-rnnsimv2-zip), MATLAB Central File Exchange. Retrieved September 22, 2020.](https://www.mathworks.com/matlabcentral/fileexchange/91-rnnsimv2-zip?s_tid=FX_rc1_behav)
 
 
-## License
+## License <a name="license"></a>
 
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
